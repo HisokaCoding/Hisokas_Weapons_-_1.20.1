@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "hisokasweapons",
+	"version": "${version}",
+	"name": "Hisoka's Weapons",
+	"description": "Adding Hisoka's weapons to your game :D",
+	"authors": [
+		"Hisoka"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/hisokasweapons/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.hisoka.hisokasweapons.HisokasWeapons"
+		],
+		"client": [
+			"net.hisoka.hisokasfurniture.HisokasWeaponsClient"
+		],
+		"fabric-datagen": [
+			"net.hisoka.hisokasweapons.HisokasWeaponsDataGenerator"
+		]
+	},
+	"mixins": [
+		"hisokasweapons.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
